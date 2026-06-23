@@ -2,13 +2,14 @@ import { Task } from "@/types";
 import { useRouter } from "expo-router";
 import { useState } from "react";
 import { KeyboardAvoidingView, Platform, StyleSheet, View } from "react-native";
-import { Appbar, Button, HelperText, TextInput } from "react-native-paper";
+import { Appbar, Button, HelperText, TextInput, useTheme } from "react-native-paper";
 import { mockTasks } from ".";
 
 export default function AddTaskScreen() {
   const router = useRouter();
   const [userInput, setUserInput] = useState({ title: "", description: "" });
   const [userError, setUserError] = useState({ titleError: "", descriptionError: "" });
+  const theme = useTheme();
 
   function userInputHandler(identifier: string, text: string) {
     setUserError(errors => ({ ...errors, [`${identifier}Error`]: "" }));
@@ -43,7 +44,7 @@ export default function AddTaskScreen() {
   }
 
   return (
-    <>
+    <View style={{ flex: 1, backgroundColor: theme.colors.background }}>
       <Appbar.Header>
         <Appbar.BackAction onPress={() => router.back()} />
         <Appbar.Content title="Add Task" />
@@ -77,7 +78,7 @@ export default function AddTaskScreen() {
           </Button>
         </View>
       </KeyboardAvoidingView>
-    </>
+    </View>
   );
 }
 
