@@ -1,56 +1,120 @@
-# Welcome to your Expo app 👋
+# React Native Paper Playground
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A Task Listing project built with Expo and React Native Paper to explore Material Design components, theming, customization, and best practices for building modern mobile applications.
 
-## Get started
+## Purpose
 
-1. Install dependencies
+This project was built as an exploratory playground to understand React Native Paper, Material Design 3 principles, and how to build scalable theming systems in a React Native + Expo environment.
 
-   ```bash
-   npm install
-   ```
+## Features
 
-2. Start the app
+- Material Design 3 theming with light and dark mode support
+- Scalable typography customization
+- Snackbar notifications
+- Reusable component architecture
+- Redux-based state management
 
-   ```bash
-   npx expo start
-   ```
+## Tech Stack
 
-In the output, you'll find options to open the app in a
+- React Native
+- Expo
+- React Native Paper — UI
+- Expo Router — Navigation
+- Redux — State Management
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Component Showcase
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+This project explores the following React Native Paper components:
 
-## Get a fresh project
+- Appbar
+- Buttons (contained, outlined)
+- Chip
+- Cards
+- Menus
+- FAB (Floating Action Button)
+- Text
+- Text Inputs
+- HelperText
+- Snackbars
+- Switches
+- Lists
 
-When you're ready, run:
+## Project Architecture
 
-```bash
-npm run reset-project
+```
+src/
+├── app/         # Expo Router routes
+├── components/  # Reusable UI components
+├── theme/       # Light/dark theme configuration
+├── store/       # Redux store setup
+├── hooks/       # Custom React hooks
+└── assets/      # Images and static files
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Getting Started
 
-### Other setup steps
+### Prerequisites
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+- Node.js 22+ (tested on Node 22)
+- npm or pnpm
+- Expo CLI
+- Expo Go app (iOS / Android) — or an iOS Simulator / Android Emulator
 
-## Learn more
+### Installation
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+git clone git@github.com:Murimi254/react-native-paper-playground.git
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+cd react-native-paper-playground
 
-## Join the community
+npm install
+```
 
-Join our community of developers creating universal apps.
+### Run the Development Server
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npm start
+```
+
+**On a physical device:** Scan the QR code with the Expo Go app.
+
+**On an emulator/simulator:** Press `a` for Android or `i` for iOS in the terminal after the server starts.
+
+## Live Demo
+
+Prefer a video walkthrough? Watch the full demo here:
+
+▶ https://youtu.be/FniPRDj7cg4
+
+## Screenshots
+
+### Light Theme
+
+<p align="center">
+  <img src="./assets/images/tasks_light.png" width="180" />
+  <img src="./assets/images/add_task_light.png" width="180" />
+  <img src="./assets/images/settings_light.png" width="180" />
+  <img src="./assets/images/error_state_light.png" width="180" />
+</p>
+
+### Dark Theme
+
+<p align="center">
+  <img src="./assets/images/tasks_dark.png" width="180" />
+  <img src="./assets/images/add_task_dark.png" width="180" />
+  <img src="./assets/images/settings_dark.png" width="180" />
+  <img src="./assets/images/error_state_dark.png" width="180" />
+</p>
+
+## Key Learnings
+
+This project helped me learn:
+
+- Designing a scalable theme system (light/dark + tokens)
+- Structuring reusable UI components with React Native Paper
+- Understanding Material Design 3 design patterns
+- Managing UI consistency across screens
+
+## License
+
+MIT
