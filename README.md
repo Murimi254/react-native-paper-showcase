@@ -20,7 +20,7 @@ This project was built as an exploratory playground to understand React Native P
 - Expo
 - React Native Paper — UI
 - Expo Router — Navigation
-- Redux — State Management
+- React Context — State Management
 
 ## Component Showcase
 
@@ -46,7 +46,7 @@ src/
 ├── app/         # Expo Router routes
 ├── components/  # Reusable UI components
 ├── theme/       # Light/dark theme configuration
-├── store/       # Redux store setup
+├── store/       # React Context setup
 ├── hooks/       # Custom React hooks
 └── assets/      # Images and static files
 ```
