@@ -1,10 +1,10 @@
-# React Native Paper Playground
+# React Native Paper Showcase
 
 A Task Listing project built with Expo and React Native Paper to explore Material Design components, theming, customization, and best practices for building modern mobile applications.
 
 ## Purpose
 
-This project was built as an exploratory playground to understand React Native Paper, Material Design 3 principles, and how to build scalable theming systems in a React Native + Expo environment.
+This project was built to explore and demonstrate React Native Paper components, Material Design 3 principles, and theming strategies in Expo applications.
 
 ## Features
 
@@ -12,7 +12,7 @@ This project was built as an exploratory playground to understand React Native P
 - Scalable typography customization
 - Snackbar notifications
 - Reusable component architecture
-- Redux-based state management
+- React-based state management
 
 ## Tech Stack
 
